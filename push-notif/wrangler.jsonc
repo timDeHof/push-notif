@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "push-notif",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "triggers": {
+    "crons": ["*/5 * * * *"]
+  },
+  "hyperdrive": [
+    { "binding": "HYPERDRIVE", "id": "5190a7e37a3a4f23a8c4648b02d6ab1b" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "push-notif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "keys:generate": "node scripts/generate-keys.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "types": "wrangler types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pushforge/builder": "^2.0.5",
+    "hono": "^4.12.25",
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260613.1",
+    "@types/node": "^25.9.3",
+    "pg": "^8.21.0",
+    "typescript": "^6.0.3",
+    "web-push": "^3.6.7",
+    "wrangler": "^4.100.0"
+  }
+}
